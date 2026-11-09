@@ -1,0 +1,33 @@
+{
+  "judul": "Diagnosis gangguan koneksi internet",
+  "batas": "Aturan berasal dari 3 sumber (dokumentasi Microsoft Support, panduan IT Black Hills State University, dan panduan Macquarie University) untuk koneksi WiFi rumah atau kampus dengan perangkat Windows. Hanya mencakup 6 kemungkinan penyebab. Hasilnya saran awal, bukan keputusan akhir.",
+  "sumber": {
+    "S1": "Fix Wi-Fi connection issues in Windows, Microsoft Support, https://support.microsoft.com/en-us/help/10741, diakses 9 Nov 2026",
+    "S2": "Wireless Signal Issues, Black Hills State University IT Help, https://support.bhsu.edu/TDClient/30/Portal/KB/ArticleDet?ID=20, diakses 9 Nov 2026",
+    "S3": "Windows Wi-Fi troubleshooting guide, Macquarie University Student Service Desk, https://students.mq.edu.au/_archived/support/technology/service-desk/student-faq/Windows-Wi-Fi-troubleshooting-guide.pdf, diakses 9 Nov 2026"
+  },
+  "pertanyaan": {
+    "terhubung ke WiFi": "Apakah perangkat Anda sudah terhubung ke WiFi?",
+    "tidak ada akses internet": "Apakah muncul keterangan 'No Internet' / tidak bisa membuka internet?",
+    "ping ke router berhasil": "Apakah ping ke router (default gateway) mendapat balasan?",
+    "perangkat lain tidak bisa internet": "Apakah perangkat lain di WiFi yang sama juga tidak bisa internet?",
+    "perangkat lain bisa internet": "Apakah perangkat lain di WiFi yang sama bisa internet dengan normal?",
+    "ping ke router gagal": "Apakah ping ke router (default gateway) tidak mendapat balasan?",
+    "internet normal lewat kabel LAN": "Apakah internet normal jika memakai kabel LAN langsung?",
+    "sinyal lemah": "Apakah sinyal WiFi lemah?",
+    "jauh dari router": "Apakah posisi Anda jauh dari router/access point?",
+    "ada perangkat penyebab interferensi dekat router": "Apakah ada microwave, telepon nirkabel, atau router lain di dekat router/perangkat Anda?",
+    "wifi lambat": "Apakah koneksi WiFi terasa lambat?",
+    "banyak perangkat tersambung": "Apakah banyak perangkat tersambung ke WiFi yang sama?"
+  },
+  "aturan": [
+    {"id": "R1", "jika": ["terhubung ke WiFi", "tidak ada akses internet"], "mode": "dan", "maka": "ada gangguan akses internet", "sumber": "S1"},
+    {"id": "R2", "jika": ["ping ke router berhasil", "ada gangguan akses internet"], "mode": "dan", "maka": "masalah di modem atau penyedia internet", "sumber": "S1"},
+    {"id": "R3", "jika": ["masalah di modem atau penyedia internet", "perangkat lain tidak bisa internet"], "mode": "dan", "maka": "gangguan dari penyedia internet (ISP)", "sumber": "S1"},
+    {"id": "R4", "jika": ["ada gangguan akses internet", "perangkat lain bisa internet"], "mode": "dan", "maka": "masalah di perangkat sendiri", "sumber": "S1"},
+    {"id": "R5", "jika": ["ping ke router gagal", "internet normal lewat kabel LAN"], "mode": "dan", "maka": "masalah di router WiFi", "sumber": "S1"},
+    {"id": "R6", "jika": ["sinyal lemah", "jauh dari router"], "mode": "dan", "maka": "sinyal lemah karena jarak", "sumber": "S2"},
+    {"id": "R7", "jika": ["sinyal lemah", "ada perangkat penyebab interferensi dekat router"], "mode": "dan", "maka": "sinyal lemah karena interferensi", "sumber": "S2"},
+    {"id": "R8", "jika": ["wifi lambat", "banyak perangkat tersambung"], "mode": "dan", "maka": "jaringan terlalu padat", "sumber": "S3"}
+  ]
+}
