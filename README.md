@@ -82,10 +82,6 @@ Kasus 3 (tidak menghasilkan kesimpulan):
 
 ![Kasus 3](screenshot/kasus3.png)
 
-Kasus 4 (beberapa kesimpulan sekaligus):
-
-![Kasus 4](screenshot/kasus4.png)
-
 ## 6. Batas Keberlakuan
 
 Pengetahuan dalam sistem ini berasal dari tiga sumber: dokumentasi Microsoft Support, panduan IT Black Hills State University, dan panduan Macquarie University. Aturannya dibuat untuk koneksi WiFi rumah atau kampus pada perangkat Windows, dan hanya mencakup enam kemungkinan penyebab. Penyebab lain (misalnya kerusakan kabel, pengaturan DNS, atau gangguan perangkat selain Windows) tidak tercakup. Hasilnya adalah saran awal, bukan keputusan akhir, dan jika masalah berlanjut sebaiknya menghubungi penyedia internet atau teknisi jaringan. Catatan ini juga ditampilkan di akhir keluaran program.
