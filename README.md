@@ -88,4 +88,4 @@ Pengetahuan dalam sistem ini berasal dari tiga sumber: dokumentasi Microsoft Sup
 
 ## 7. Penggunaan Alat Bantu AI
 
-Claude (Anthropic) dipakai sebagai alat bantu untuk menyusun draf aturan, kode program, dan README. Isi aturan sudah saya cocokkan dengan sumber, dan saya memahami serta dapat menjelaskan kode dan aturan ini. [EDIT bagian ini sesuai penggunaan Anda yang sebenarnya]
+AI di sini digunakan sebagai alat bantu sebagai pembimbing jika dirasa buntu, memberikan arahan step by step apa saja yang perlu diikuti untuk mendapatkan hasil jawaban tugas yang diinginkan. Jika masih dirasa kesulitan maka saya akan meminta jalan keluarnya sembari mempelajari alasan-alasannya untuk pembelajaran dan meningkatkan pemahaman.
