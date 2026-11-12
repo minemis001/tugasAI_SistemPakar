@@ -68,7 +68,6 @@ Urutan jawaban mengikuti urutan 12 pertanyaan di program.
 | 1 | terhubung ke WiFi, tidak ada akses internet, ping ke router berhasil, perangkat lain tidak bisa internet | gangguan dari penyedia internet (ISP) |
 | 2 | terhubung ke WiFi, tidak ada akses internet, perangkat lain bisa internet | masalah di perangkat sendiri |
 | 3 | sinyal lemah saja | **tidak ada** (kasus negatif) |
-| 4 | sinyal lemah, jauh dari router, ada perangkat penyebab interferensi, wifi lambat, banyak perangkat tersambung | sinyal lemah karena jarak; sinyal lemah karena interferensi; jaringan terlalu padat |
 
 Kasus 1 (menghasilkan kesimpulan):
 
