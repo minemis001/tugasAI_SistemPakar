@@ -9,7 +9,7 @@
 
 Topik: diagnosis gangguan koneksi internet (WiFi) pada perangkat Windows.
 
-- Bahasa: Python 3 (versi [ISI VERSI PYTHON ANDA], tanpa library tambahan)
+- Bahasa: Python 3 (versi 3.14.2, tanpa library tambahan)
 - File:
   - `kb_internet.json` : file aturan (IF-THEN) beserta sumbernya
   - `sistem_pakar.py` : program (mesin forward chaining ditulis sendiri)
@@ -88,4 +88,4 @@ Pengetahuan dalam sistem ini berasal dari tiga sumber: dokumentasi Microsoft Sup
 
 ## 7. Penggunaan Alat Bantu AI
 
-AI di sini digunakan sebagai alat bantu sebagai pembimbing jika dirasa buntu, memberikan arahan step by step apa saja yang perlu diikuti untuk mendapatkan hasil jawaban tugas yang diinginkan. Jika masih dirasa kesulitan maka saya akan meminta jalan keluarnya sembari mempelajari alasan-alasannya untuk pembelajaran dan meningkatkan pemahaman.
+Saya merasa kesulitan memulai tugas ini, jadi saya memakai AI untuk menyusun draf aturan IF-THEN, kode forward chaining, dan README. Setelah itu saya mempelajari hasilnya, mencocokkan aturan dengan sumber, dan menjalankan serta menguji programnya sendiri agar dapat menjelaskannya.
